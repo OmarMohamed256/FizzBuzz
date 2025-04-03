@@ -51,10 +51,10 @@ public class FizzBuzzDetector
             }
             else
             {
-                outputString += word;
+                outputString += word + ' ';
             }
         }
-
+        outputString = outputString.TrimEnd();
         return new FizzBuzzOutput(outputString, FizzCount, BuzzCount, FizzBuzzCount);
     }
     public static bool IsAlphanumeric(string word)
